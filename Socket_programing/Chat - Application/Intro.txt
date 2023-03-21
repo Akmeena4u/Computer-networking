@@ -1,0 +1,62 @@
+
+// required headerfiles
+
+#include<stdio.h>
+#include<sys/types.h>\
+#include<sys/socket.h>
+#include<netinet.h>
+#include<stdlib.h>
+
+
+//socket programing
+--------------------------------------------------------------------------------------------
+//create socket
+
+int sockfd=socket(AF_INET,SOCK_STREAM,0);   //SOCK_DGRAM FOR UDP
+----------------------------------------------------------------------------------------------
+//bind socket to address space --  const struct sockaddr *addr     // o for successful or -1 for failure
+
+int bind(int sockfd , const struct sockaddr *addr , socklen_t addrlen);
+
+--------------------------------------------------------------------------------------------
+
+//listen means declare a socket to be availabe for connection requests or as passive socket
+
+int listen(int sockfd ,int backlog);  
+
+//here backlog tells number of connection as server can handle at a time
+
+
+
+--------------------------------------------------------------------------------------------
+
+//accept clients requests its a blocking system call it will wait for connection request for further execution
+
+
+int newsockfd=accept(sockfd,(struct sockaddr*) &addr , &addrlen);
+
+
+------------------------------------------------------------------------------------------------
+
+
+//conection request from client
+
+int connect(int sockfd , const struct sockaddr* addr , socklen_t addrlen);
+
+
+-----------------------------------------------------------------------
+//after accepts system call we will use newsockfd for future communication 
+
+
+int read(newsockfd ,buffer,BUFFER_SIZE)
+int write(newsockfd ,buffer,BUFFER_SIZE)
+
+
+--------------------------------------------------------------------------
+
+close(sockfd)
+close(newsockfd)
+
+
+
+
