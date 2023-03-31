@@ -1,8 +1,0 @@
-Nitw Rail Junction: Consider the following different processes at a Railway Junction as shown in figure below. Trains (T) may arrive at directional points H, V, D of the Station Master (SM). SM can accept a T if any of the Platform (P) is free. After accepting a T, the SM process gives (sends) the announcement of arrival of T to all the platforms. Then SM handovers the accepted fd of T, to a free platform (P), so that the train (T) sends its arranged sequence of compartments, directly to the platform. Then, P displays the same. After the train leaves the station, it informs the platform (P). The process P notifies the same to SM. Implement all the processes involved in this Railway Junction System Scenario implememnt whole networking codes of above process in c
-
-
-
-
-
-
-
