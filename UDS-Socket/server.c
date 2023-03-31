@@ -144,3 +144,14 @@ main(int argc, char *argv[])
     unlink(SOCKET_NAME);
     exit(EXIT_SUCCESS);
 }
+
+/*
+How to run
+
+come to the directory 
+gcc -g server.c -o server
+./server
+
+
+executing a same client code in different window act as new client
+*/
