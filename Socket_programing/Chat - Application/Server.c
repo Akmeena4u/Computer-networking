@@ -4,6 +4,18 @@ Welcome to GDB Online.
   GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
   C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, COBOL, HTML, CSS, JS
   Code, Compile, Run and Debug online from anywhere in world.
+  
+  gcc server.c -o sever
+  ./server 9999
+  
+  for client
+  
+  ./client loopback 9999
+  
+  loopback === ip address of server == 127.0.0.1
+  
+  
+  ifconfig to get ipadrres
 
 *******************************************************************************/
 #include <stdio.h>
